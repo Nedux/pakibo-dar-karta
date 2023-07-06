@@ -536,7 +536,7 @@
     drawBoard();
     addEventListners();
     enableModal();
-    //hideIOSTab();
+    hideIOSTab();
 
     function addEventListners()
     {
@@ -544,7 +544,7 @@
       var i;
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-          //TODO Remove already activated things
+          
           if (!this.classList.contains("active"))
             closeAllTabs();
           this.classList.toggle("active");
